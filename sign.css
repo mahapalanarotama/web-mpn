@@ -1,0 +1,161 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.left-section {
+    background-color: #ffffff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.illustration {
+    width: 300px;
+}
+
+.right-section {
+    background-color: #ffffff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.icon, .toggle-password {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #777;
+}
+
+.password-group .toggle-password {
+    right: 15px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #e64a19;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.terms, .register {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.terms a, .register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover, .register a:hover {
+    text-decoration: underline;
+}

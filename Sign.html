@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Mahapala Narotama</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="logo.png" alt="Mahapala Narotama" class="logo">
+            <img src="illustration.png" alt="Illustration" class="illustration">
+        </div>
+        <div class="right-section">
+            <div class="form-container">
+                <h2>Selamat Datang Kembali!</h2>
+                <p>Silakan masuk dengan alamat email</p>
+                <form action="dashboard.html" method="post" class="sign-in-form">
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <i class="fa fa-envelope icon"></i>
+                    </div>
+                    <div class="form-group password-group">
+                        <label for="password"></label>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+                    </div>
+                    <a href="#" class="forgot-password">Lupa Password?</a>
+                    <button type="submit" class="btn-submit">Masuk</button>
+                </form>
+                <div class="social-login">
+                    <p>Atau masuk melalui social media</p>
+                    <div class="social-icons">
+                        <button class="social-btn facebook">Facebook</button>
+                        <button class="social-btn google">Google</button>
+                    </div>
+                </div>
+                <p class="terms">Saya telah menyetujui <a href="#">Terms And Conditions</a> dan <a href="#">Privacy Policy</a>.</p>
+                <p class="register">Belum memiliki akun? <a href="#">Daftar Sekarang</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("password");
+            const passwordIcon = document.querySelector(".toggle-password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordIcon.textContent = "🙈";
+            } else {
+                passwordInput.type = "password";
+                passwordIcon.textContent = "👁️";
+            }
+        }
+    </script>
+</body>
+</html>

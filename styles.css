@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+}
+
+header {
+    background: #00796b;
+    color: #fff;
+    padding: 60px 20px 20px; /* Adjusted padding */
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #004d40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+/* Garis pemisah antara logo dan menu */
+.navbar-left .separator {
+    border-left: 2px solid #fff; /* Warna dan ketebalan garis */
+    height: 40px; /* Sesuaikan tinggi garis dengan navbar */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in-btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.sign-in-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive Navbar - Hide menu and show hamburger icon on small screens */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#nav-links {
+    display: flex;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #004d40;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-left {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    /* Hide the logo on mobile view */
+    .logo {
+        display: none;
+    }
+
+    .sign-in-btn {
+        padding: 8px 16px;
+    }
+}
+
+main {
+    padding: 100px 20px; /* Adjusted padding to prevent overlap */
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #00796b;
+    color: #fff;
+}
