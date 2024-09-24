@@ -16,3 +16,12 @@ function toggleMenu() {
         navLinks.style.display = "flex";
     }
 }
+
+// Ambil tombol dengan id "signInBtn"
+const signInButton = document.getElementById("signInBtn");
+
+// Tambahkan event listener ketika tombol diklik
+signInButton.addEventListener("click", function() {
+    // Gunakan path relatif ke halaman dashboard
+    window.location.href = "./Sign.html"; // Path relatif
+});
