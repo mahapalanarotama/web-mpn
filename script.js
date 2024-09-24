@@ -23,5 +23,5 @@ const signInButton = document.getElementById("signInBtn");
 // Tambahkan event listener ketika tombol diklik
 signInButton.addEventListener("click", function() {
     // Gunakan path relatif ke halaman dashboard
-    window.location.href = "./Sign.html"; // Path relatif
+    window.location.href = "./SignIn.html"; // Path relatif
 });

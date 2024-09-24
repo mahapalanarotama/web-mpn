@@ -96,3 +96,20 @@ button:hover {
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* Tambahkan ke styles.css jika ingin menambahkan variasi */
+.sign-up-form h1 {
+    color: #333;
+}
+
+.sign-up-form button {
+    background-color: #28a745; /* Warna hijau untuk tombol daftar */
+}
+
+.sign-up-form button:hover {
+    background-color: #218838; /* Warna hijau gelap saat hover */
+}
+
+.footer p {
+    font-size: 14px;
+}
